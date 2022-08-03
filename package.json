@@ -1,0 +1,37 @@
+{
+  "name": "hatech-web-utils",
+  "version": "0.1.8",
+  "description": "前端工具函数，集成最小依赖的工具函数",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "prepublish": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.hatech.com.cn:8088/hatech-web/hatech-web-utils.git"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test"
+    }
+  },
+  "keywords": [
+    "utils"
+  ],
+  "author": {
+    "name": "wuhao",
+    "email": "wuhaowh@hatech.com.cn"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.9.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "husky": "^4.3.8",
+    "jest": "^26.6.3"
+  }
+}
